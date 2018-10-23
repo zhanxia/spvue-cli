@@ -1,0 +1,108 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/jiazhanxia/.nvm/versions/node/v6.3.1/bin/node',
+1 verbose cli   '/Users/jiazhanxia/.nvm/versions/node/v6.3.1/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@3.10.3
+3 info using node@v6.3.1
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/jiazhanxia/job/spvue-cli',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/jiazhanxia/.npm/spvue-cli/1.0.0/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/jiazhanxia/.npm correctMkdir not in flight; initializing
+10 info lifecycle spvue-cli@1.0.0~prepublish: spvue-cli@1.0.0
+11 silly lifecycle spvue-cli@1.0.0~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/Users/jiazhanxia/.npm/spvue-cli/1.0.0/package.tgz',
+12 verbose tar pack   '/Users/jiazhanxia/job/spvue-cli' ]
+13 verbose tarball /Users/jiazhanxia/.npm/spvue-cli/1.0.0/package.tgz
+14 verbose folder /Users/jiazhanxia/job/spvue-cli
+15 verbose addLocalTarball adding from inside cache /Users/jiazhanxia/.npm/spvue-cli/1.0.0/package.tgz
+16 verbose correctMkdir /Users/jiazhanxia/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd spvue-cli@1.0.0
+18 verbose afterAdd /Users/jiazhanxia/.npm/spvue-cli/1.0.0/package/package.json not in flight; writing
+19 verbose correctMkdir /Users/jiazhanxia/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /Users/jiazhanxia/.npm/spvue-cli/1.0.0/package/package.json written
+21 silly publish { name: 'spvue-cli',
+21 silly publish   version: '1.0.0',
+21 silly publish   description: '基于vue的单页面脚手架工具',
+21 silly publish   dependencies:
+21 silly publish    { chalk: '^2.4.1',
+21 silly publish      commander: '^2.19.0',
+21 silly publish      'download-git-repo': '^1.1.0',
+21 silly publish      handlebars: '^4.0.12',
+21 silly publish      inquirer: '^6.2.0',
+21 silly publish      'log-symbols': '^2.2.0',
+21 silly publish      ora: '^3.0.0' },
+21 silly publish   keywords: [ 'vue', 'single page web application', 'public' ],
+21 silly publish   bin: { spvue: './index.js' },
+21 silly publish   engines: { node: '>= 9.0.0', npm: '>= 5.8.0' },
+21 silly publish   author: { name: 'jiahanxia', email: 'jiazhanxia@jd.com' },
+21 silly publish   license: 'ISC',
+21 silly publish   readme: 'ERROR: No README data found!',
+21 silly publish   _id: 'spvue-cli@1.0.0',
+21 silly publish   scripts: {},
+21 silly publish   _shasum: 'b9b15f45dc4ae5dd15c9c04d5842ddc48546b07f',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name spvue-cli
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'spvue-cli',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'spvue-cli',
+26 silly mapToRegistry   name: 'spvue-cli',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/spvue-cli
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading /Users/jiazhanxia/.npm/spvue-cli/1.0.0/package.tgz
+30 verbose request uri https://registry.npmjs.org/spvue-cli
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 15:17:46
+33 verbose request using bearer token for auth
+34 verbose request id 2db12cba78a74577
+35 http request PUT https://registry.npmjs.org/spvue-cli
+36 http 400 https://registry.npmjs.org/spvue-cli
+37 verbose headers { date: 'Tue, 23 Oct 2018 07:17:48 GMT',
+37 verbose headers   'content-type': 'application/json',
+37 verbose headers   'content-length': '87',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'set-cookie': [ '__cfduid=d7b8119a0c1a5245d83548304f48f9d141540279067; expires=Wed, 23-Oct-19 07:17:47 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+37 verbose headers   'cf-ray': '46e26d0e3a6e7706-LAX',
+37 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+37 verbose headers   vary: 'Accept-Encoding',
+37 verbose headers   server: 'cloudflare' }
+38 verbose request invalidating /Users/jiazhanxia/.npm/registry.npmjs.org/spvue-cli on PUT
+39 error publish Failed PUT 400
+40 verbose stack Error: Cannot publish over previously published version "1.0.0". : spvue-cli
+40 verbose stack     at makeError (/Users/jiazhanxia/.nvm/versions/node/v6.3.1/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (/Users/jiazhanxia/.nvm/versions/node/v6.3.1/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+40 verbose stack     at Request._callback (/Users/jiazhanxia/.nvm/versions/node/v6.3.1/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+40 verbose stack     at Request.self.callback (/Users/jiazhanxia/.nvm/versions/node/v6.3.1/lib/node_modules/npm/node_modules/request/request.js:200:22)
+40 verbose stack     at emitTwo (events.js:106:13)
+40 verbose stack     at Request.emit (events.js:191:7)
+40 verbose stack     at Request.<anonymous> (/Users/jiazhanxia/.nvm/versions/node/v6.3.1/lib/node_modules/npm/node_modules/request/request.js:1067:10)
+40 verbose stack     at emitOne (events.js:101:20)
+40 verbose stack     at Request.emit (events.js:188:7)
+40 verbose stack     at IncomingMessage.<anonymous> (/Users/jiazhanxia/.nvm/versions/node/v6.3.1/lib/node_modules/npm/node_modules/request/request.js:988:12)
+41 verbose statusCode 400
+42 verbose pkgid spvue-cli
+43 verbose cwd /Users/jiazhanxia/job/spvue-cli
+44 error Darwin 17.3.0
+45 error argv "/Users/jiazhanxia/.nvm/versions/node/v6.3.1/bin/node" "/Users/jiazhanxia/.nvm/versions/node/v6.3.1/bin/npm" "publish"
+46 error node v6.3.1
+47 error npm  v3.10.3
+48 error code E400
+49 error Cannot publish over previously published version "1.0.0". : spvue-cli
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]

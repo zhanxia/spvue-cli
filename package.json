@@ -1,0 +1,28 @@
+{
+  "name": "spvue-cli",
+  "version": "1.0.1",
+  "description": "基于vue的单页面脚手架工具",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "commander": "^2.19.0",
+    "download-git-repo": "^1.1.0",
+    "handlebars": "^4.0.12",
+    "inquirer": "^6.2.0",
+    "log-symbols": "^2.2.0",
+    "ora": "^3.0.0"
+  },
+  "keywords": [
+    "vue",
+    "single page web application",
+    "public"
+  ],
+  "bin": { 
+    "spvue": "./index.js" 
+  },
+  "engines": {
+    "node": ">= 9.0.0",
+    "npm": ">= 5.8.0"
+  },
+  "author": "jiahanxia <jiazhanxia@jd.com>",
+  "license": "ISC"
+}
