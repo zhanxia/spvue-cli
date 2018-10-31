@@ -48,7 +48,7 @@ program.version('1.0.0', '-v, --version')
                     name, 
                     description: answers.description, 
                     author: answers.author,
-                    uploadPath:answers.uploadPath
+                    uploadPath:answers.uploadPath || '/flowh5/2018/10'
                 } 
                 const fileName = `${name}/package.json`; 
                 const content = fs.readFileSync(fileName).toString(); 
