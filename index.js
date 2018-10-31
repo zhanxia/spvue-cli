@@ -29,6 +29,9 @@ program.version('1.0.0', '-v, --version')
             },{ 
               name: 'author', 
               message: '请输入作者名称' 
+            },{ 
+              name: 'uploadPath', 
+              message: '请输项目访问地址【不需要包含域名和项目名称】（例如/flowh5/2018/10）' 
             }
           ]).then((answers) => { 
             // 开始下载 
@@ -44,7 +47,8 @@ program.version('1.0.0', '-v, --version')
                 const meta = { 
                     name, 
                     description: answers.description, 
-                    author: answers.author 
+                    author: answers.author,
+                    uploadPath:answers.uploadPath
                 } 
                 const fileName = `${name}/package.json`; 
                 const content = fs.readFileSync(fileName).toString(); 

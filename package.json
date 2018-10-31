@@ -1,6 +1,6 @@
 {
   "name": "spvue-cli",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "基于vue的单页面脚手架工具",
   "dependencies": {
     "chalk": "^2.4.1",
